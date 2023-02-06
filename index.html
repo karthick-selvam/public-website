@@ -28,7 +28,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 
@@ -38,7 +38,7 @@
 	<body class="no-select scroll-container">
 		<header class="header">
 			<div class="logo">
-				<img src="assets/yoco-logo.png" alt="YOCO labs Logo" />
+				<a href="/"><img src="assets/yoco-logo.png" alt="YOCO labs Logo" /></a>
 			</div>
 			<nav class="main-nav">
 				<ul class="main-nav-list">
@@ -480,9 +480,71 @@
 					</footer>
 				</section>
 			</section>
+			<section class="application-section">
+				<div class="application container grid grid--cols-2">
+					<div class="application-text-box">
+						<ul class="application-list">
+							<li class="application-list-item">
+								<img
+									src="assets/tick-without-fill.png"
+									alt="Tick icon without fill"
+								/>
+								<p>
+									Real Time
+									<span class="application-colored-text">Monitoring</span>
+								</p>
+							</li>
+							<li class="application-list-item">
+								<img
+									src="assets/tick-without-fill.png"
+									alt="Tick icon without fill"
+								/>
+								<p>
+									Advanced
+									<span class="application-colored-text">Analytics</span>
+								</p>
+							</li>
+							<li class="application-list-item">
+								<img
+									src="assets/tick-without-fill.png"
+									alt="Tick icon without fill"
+								/>
+								<p>
+									Notifications and
+									<span class="application-colored-text"> Alerts </span>
+								</p>
+							</li>
+						</ul>
+						<p class="application-description">
+							"Our AI Video Surveillance & Analytics Software offers a real-time
+							dashboard, providing you with live streaming of your surveillance
+							footage, advanced analytics, and real-time alerts.
+						</p>
+						<p class="application-description">
+							You can be confident in the security of your property. Stay
+							informed with real-time notifications via email, SMS, or push
+							notifications and respond quickly to any potential security
+							incidents. Experience the power of real-time surveillance and
+							analytics with our cutting-edge software."
+						</p>
+					</div>
+					<div class="application-img-box">
+						<img
+							class="application-img"
+							src="assets/dashboard.png"
+							alt="Third eye application's dashboard"
+						/>
+						<!-- <img
+							class="application-img-pattern"
+							src="assets/patterns/round-pattern.svg"
+							alt="Round pattern"
+						/> -->
+					</div>
+				</div>
+			</section>
 			<section class="testimonials-section">
 				<header class="testimonials-header">
-					<blockquote>
+					<blockquote class="container">
 						"The people and businesses <br />
 						who trust us to meet their needs"
 					</blockquote>
@@ -660,10 +722,21 @@
 				<div class="contact--1">
 					<div class="contact--1-text-box">
 						<h3 class="contact--1-text">Need more information?</h3>
-						<a class="btn btn--brochure margin-right-sm" href="#"
+						<a
+							class="btn btn--brochure margin-right-sm"
+							href="assets/docs/brochure.pdf"
+							download="brochure.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
 							>Download Brochure</a
 						>
-						<a class="btn btn--play-video" href="#">Play Video</a>
+						<a
+							class="btn btn--play-video"
+							href="https://youtu.be/Q2BgPWmYSYs"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Play Video</a
+						>
 					</div>
 					<div class="contact--1-overlay"></div>
 				</div>
@@ -732,7 +805,12 @@
 							<p class="social-links-title">Social Links</p>
 							<ul class="social-links-list">
 								<li>
-									<a href="#">
+									<a
+										class="social-link youtube-link"
+										href="https://www.youtube.com/@yocolabs1383"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<svg
 											width="37"
 											height="36"
@@ -741,6 +819,7 @@
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path
+												class="icon-outer youtube-icon-outer"
 												d="M18.3775 36C28.5271 36 36.755 27.9411 36.755 18C36.755 8.05888 28.5271 0 18.3775 0C8.22788 0 0 8.05888 0 18C0 27.9411 8.22788 36 18.3775 36Z"
 												fill="#F31C0D"
 											/>
@@ -752,7 +831,12 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a
+										class="social-link linkedin-link"
+										href="https://www.linkedin.com/company/yoco-labs/mycompany/"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<svg
 											width="38"
 											height="36"
@@ -761,6 +845,7 @@
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path
+												class="icon-outer linkedin-icon-outer"
 												d="M19.1324 36C29.282 36 37.5098 27.9411 37.5098 18C37.5098 8.05888 29.282 0 19.1324 0C8.98276 0 0.754883 8.05888 0.754883 18C0.754883 27.9411 8.98276 36 19.1324 36Z"
 												fill="#0A66C0"
 											/>
@@ -780,7 +865,12 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a
+										class="social-link twitter-link"
+										href="https://twitter.com/yocolabs"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<svg
 											width="38"
 											height="36"
@@ -789,6 +879,7 @@
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path
+												class="icon-outer twitter-icon-outer"
 												d="M18.8874 36C29.037 36 37.2649 27.9411 37.2649 18C37.2649 8.05888 29.037 0 18.8874 0C8.73777 0 0.509888 8.05888 0.509888 18C0.509888 27.9411 8.73777 36 18.8874 36Z"
 												fill="#03A8F3"
 											/>
@@ -800,7 +891,12 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a
+										class="social-link facebook-link"
+										href="https://www.facebook.com/yocolabs?mibextid=ZbWKwL/"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<svg
 											width="38"
 											height="36"
@@ -809,6 +905,7 @@
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path
+												class="icon-outer facebook-icon-outer"
 												d="M18.6424 36C28.792 36 37.0199 27.9411 37.0199 18C37.0199 8.05888 28.792 0 18.6424 0C8.49277 0 0.264893 8.05888 0.264893 18C0.264893 27.9411 8.49277 36 18.6424 36Z"
 												fill="#3D6AD5"
 											/>
@@ -820,7 +917,12 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a
+										class="social-link instagram-link"
+										href="https://www.instagram.com/yocolabspvtltd/"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<svg
 											width="37"
 											height="36"
@@ -829,6 +931,7 @@
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path
+												class="icon-outer instagram-icon-outer"
 												d="M18.3973 36C28.5469 36 36.7747 27.9411 36.7747 18C36.7747 8.05888 28.5469 0 18.3973 0C8.24765 0 0.0197754 8.05888 0.0197754 18C0.0197754 27.9411 8.24765 36 18.3973 36Z"
 												fill="url(#paint0_linear_361_198)"
 											/>
