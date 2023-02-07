@@ -1,0 +1,78 @@
+/****************************************/
+/* INDUSTRIES SECTION */
+/****************************************/
+.slider-section {
+	height: 90vh;
+}
+.slider {
+	overflow: hidden;
+}
+.slider-img-box {
+	width: 100%;
+	display: flex;
+	animation: slide 24s infinite;
+}
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+	1% {
+		transform: translateX(-200%);
+	}
+	10% {
+		transform: translateX(-200%);
+	}
+	20% {
+		transform: translateX(-100%);
+	}
+	30% {
+		transform: translateX(-100%);
+	}
+
+	40% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(0);
+	}
+
+	60% {
+		transform: translateX(-300%);
+	}
+	70% {
+		transform: translateX(-300%);
+	}
+
+	80% {
+		transform: translateX(-400%);
+	}
+	90% {
+		transform: translateX(-400%);
+	}
+	95% {
+		transform: translateX(-500%);
+	}
+	100% {
+		transform: translateX(-500%);
+	}
+}
+.slider-img {
+	width: 100%;
+}
+.slider-banner {
+	background: linear-gradient(266.91deg, #d3ffd5 0%, #3adeff 77.57%);
+	padding: 4.8rem 0;
+}
+.slider-banner-text-box {
+	text-align: center;
+	color: #232526;
+}
+.slider-primary-text {
+	font-size: 5rem;
+	font-weight: 700;
+	line-height: 1.1;
+}
+.slider-secondary-text {
+	font-size: 2.5rem;
+	line-height: 1.4;
+}

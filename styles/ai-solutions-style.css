@@ -41,140 +41,6 @@ High: 30px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-/* Global Reset*/
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* Font-size change for Responsive layout */
-html {
-	font-size: 62.5%;
-}
-
-body {
-	font-family: "Poppins", sans-serif;
-	line-height: 1;
-	font-weight: 400;
-	color: #575e63;
-}
-
-/* Text Selection & Image dragging disabled */
-.no-select {
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-}
-
-img,
-a {
-	-webkit-user-drag: none;
-	-khtml-user-drag: none;
-	-moz-user-drag: none;
-	-o-user-drag: none;
-}
-
-/* Changing the Scrollbar style */
-.scroll-container::-webkit-scrollbar {
-	width: 0.3em;
-	background-color: transparent;
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-	background-color: gray;
-	width: 0.2em;
-	height: 0.2em;
-}
-
-/****************************************/
-/* GENERAL REUSABLE COMPONENTS */
-/****************************************/
-
-.container {
-	max-width: 120rem;
-	margin: 0 auto;
-	padding: 0 3.2rem;
-}
-
-.grid {
-	display: grid;
-	gap: 6.4rem;
-}
-
-.grid--cols-2 {
-	grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--cols-3 {
-	grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--cols-4 {
-	grid-template-columns: repeat(4, 1fr);
-}
-
-.primary-heading {
-	color: #000;
-	font-size: 4.4rem;
-	font-weight: 600;
-	letter-spacing: -0.5px;
-	margin-bottom: 1.2rem;
-}
-
-.secondary-heading {
-	font-size: 3.6rem;
-	color: #03b9d5;
-	margin-bottom: 0.8rem;
-}
-
-.small-heading {
-	font-size: 1.8rem;
-	font-weight: 600;
-	margin-bottom: 0.8rem;
-}
-
-.btn:link,
-.btn:visited {
-	display: inline-block;
-	font-size: 2rem;
-	font-weight: 500;
-	text-decoration: none;
-	padding: 1.2rem 2.4rem;
-	border-radius: 2px;
-	cursor: pointer;
-}
-.btn--primary:link,
-.btn--primary:visited {
-	background-color: #12c9e3;
-	color: #fff;
-}
-.btn--secondary:link,
-.btn--secondary:visited {
-	background-color: #07e39c;
-	color: #fff;
-}
-
-.btn--outlined:link,
-.btn--outlined:visited {
-	border: 2px solid #575e63;
-	border-radius: 20px;
-	color: #575e63;
-}
-
-.action-btn {
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
-}
-
-.margin-right-sm {
-	margin-right: 1.6rem;
-}
-
 /****************************************/
 /* HERO SECTION */
 /****************************************/
@@ -183,15 +49,15 @@ a {
 }
 .hero {
 	max-width: 130rem;
+	gap: 3.2rem;
 }
-.hero-img {
+
+.hero-video {
 	width: 100%;
+	border-radius: 30px;
 }
-.hero-heading-img-box {
-	width: fit-content;
-}
-.hero-heading-img {
-	width: 100%;
+.hero-heading {
+	margin-top: 2.4rem;
 }
 .hero-description {
 	font-size: 1.6rem;

@@ -14,12 +14,13 @@
 			rel="stylesheet"
 		/>
 
+		<link rel="stylesheet" href="styles/common-style.css" />
 		<link rel="stylesheet" href="styles/product-style.css" />
 	</head>
 	<body>
 		<section class="hero-section">
-			<main class="hero-main container">
-				<div class="hero grid grid--cols-2">
+			<main class="hero-main">
+				<div class="hero container grid grid--cols-2">
 					<div class="hero-img-box">
 						<img
 							class="hero-img"
@@ -200,49 +201,58 @@
 				</div>
 			</main>
 		</section>
-		<section class="specification-demo-section grid grid--cols-2">
-			<div class="specification-section">
-				<div class="specification">
-					<h4 class="specification-title">Product Specification</h4>
-					<div class="specification-img-box">
+		<section class="types-section">
+			<div class="types container grid grid--cols-2">
+				<article class="types-card ultra-plus-card">
+					<div class="types-img-box">
 						<img
-							class="specification-img"
-							src="assets/products-page/edge-box-3.png"
-							alt="Edge box in pencil drawing"
+							src="assets/products-page/edge-box-standard.png"
+							alt="Image of Edge box ultra plus"
 						/>
 					</div>
-
-					<div class="specification-list">
-						<ul class="specification-key-list">
-							<li class="">Processor</li>
-							<li class="">Graphics</li>
-							<li class="">Memory</li>
-							<li class="">Storage</li>
-							<li class="">OS</li>
-						</ul>
-						<ul class="specification-value-list">
-							<li class="">
-								: Intel® Core™ i5-1240P Processor (12M Cache, up to 4.40 GHz)
-							</li>
-							<li class="">: Intel Integrated Graphics</li>
-							<li class="">: 16GB (2x 8GB) DDR4-3200 SODIMMs</li>
-							<li class="">: 256GB NVMe SSD (M.2 2280)</li>
-							<li class="">: Windows 10 IoT Enterprise*</li>
+					<div class="types-text-box">
+						<h3 class="types-title">Edge Ultra +</h3>
+						<ul class="types-list">
+							<li class="types-list-item">Supports upto 20 features</li>
+							<li class="types-list-item">Supports upto 20 features</li>
+							<li class="types-list-item">Supports upto 20 features</li>
+							<li class="types-list-item">Supports upto 20 features</li>
 						</ul>
 					</div>
-				</div>
+				</article>
+				<article class="types-card standard-card">
+					<div class="types-img-box">
+						<img
+							src="assets/products-page/edge-box-standard.png"
+							alt="Image of Edge box ultra plus"
+						/>
+					</div>
+					<div class="types-text-box">
+						<h3 class="types-title">Edge Standard</h3>
+						<ul class="types-list">
+							<li class="types-list-item">Supports upto 20 features</li>
+							<li class="types-list-item">Supports upto 20 features</li>
+							<li class="types-list-item">Supports upto 20 features</li>
+							<li class="types-list-item">Supports upto 20 features</li>
+						</ul>
+					</div>
+				</article>
 			</div>
-			<div class="demo-section">
+		</section>
+		<section class="demo-section">
+			<header class="demo-header container">
 				<h3 class="demo-primary-heading">Request for a</h3>
 				<h4 class="demo-secondary-heading">Free Demo</h4>
-				<div class="demo">
-					<div class="demo-img-box">
-						<img
-							class="demo-img"
-							src="assets/products-page/demo-contact.png"
-							alt="A person contacting someone"
-						/>
-					</div>
+			</header>
+			<div class="demo container grid grid--cols-2">
+				<div class="demo-img-box">
+					<img
+						class="demo-img"
+						src="assets/products-page/demo-contact.png"
+						alt="A person contacting someone"
+					/>
+				</div>
+				<div class="demo-form-box">
 					<form class="demo-form">
 						<div class="inputs-box">
 							<input
