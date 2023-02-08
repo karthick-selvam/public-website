@@ -181,11 +181,18 @@ a {
 	color: #fff;
 }
 .action-btn {
+	font-size: 2rem;
+	font-weight: 500;
+	padding: 1.2rem 2.4rem;
+	border-radius: 30px;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
 }
-
+.primary-action-btn {
+	background-color: #12c9e3;
+	color: #fff;
+}
 .margin-right-sm {
 	margin-right: 1.6rem;
 }
@@ -193,28 +200,33 @@ a {
 /****************************************/
 /* HEADER SECTION */
 /****************************************/
-
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 9.6rem;
-	padding: 0 4.8rem;
 	position: sticky;
 	top: 0;
 	background: rgba(255, 255, 255, 0.9);
 	backdrop-filter: blur(20px);
 	z-index: 500;
 }
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 9.6rem;
+	padding: 0 4.8rem;
+}
 
 /****************************************/
 /* NAVIGATION SECTION */
 /****************************************/
+.main-nav {
+	position: relative;
+	perspective: 600px;
+}
 
 .main-nav-list {
 	list-style: none;
 	display: flex;
-	gap: 1.6rem;
+	justify-content: center;
 }
 
 .main-nav-link:link,
@@ -224,16 +236,22 @@ a {
 	color: #000;
 	font-size: 1.6rem;
 	font-weight: 500;
-	padding: 1rem 1.6rem;
+	margin: 30px 20px;
+	cursor: default;
 }
 
 .main-nav-list .main-nav-list-item {
 	position: relative;
+	display: flex;
+	justify-content: center;
 	border-bottom: 3px solid transparent;
 	transition: all 0.3s ease-in-out;
 }
 
 .main-nav-list .main-nav-list-item::after {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
 	content: "";
 	display: block;
 	width: 0;
@@ -251,7 +269,7 @@ a {
 	background-color: #fff;
 	box-shadow: 0 3px 6px #1860d333;
 	position: absolute;
-	top: 60px;
+	top: 0px;
 	min-width: 20rem;
 	border-radius: 10px;
 	z-index: 999;
@@ -259,6 +277,82 @@ a {
 .main-nav-list-item:hover .main-nav-dropdown {
 	display: block;
 }
+
+.dropdown-nav-link,
+.sub-link-menu {
+	padding-left: 15px;
+}
+
+.sub-link-menu {
+	color: #afafaf;
+	white-space: nowrap;
+}
+
+.sub-link-menu:hover {
+	color: #565656;
+}
+
+.dropdown {
+	opacity: 0;
+	display: none;
+	position: absolute;
+	overflow: hidden;
+	padding: 20px;
+	top: -20px;
+	border-radius: 2px;
+	transition: all 0.5s;
+	transform: translateY(100px);
+	will-change: opacity;
+}
+
+/*first submenu settings*/
+.menu-sub-icon {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+.menu-sub-main-text {
+	margin-left: 15px;
+}
+
+/*trigger events settings*/
+.main-nav-list-item.trigger-enter .dropdown {
+	display: block;
+}
+
+.main-nav-list-item.trigger-enter-active .dropdown {
+	opacity: 1;
+}
+
+.dropdownBackground {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
+		0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s, opacity 0.1s, transform 0.2s;
+	transform-origin: 50% 0;
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+}
+
+.dropdownBackground.open {
+	opacity: 1;
+}
+
+.arrow {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	display: block;
+	background: white;
+	transform: translateY(-50%) rotate(45deg);
+}
+
 /****************************************/
 /* FOOTER SECTION */
 /****************************************/
@@ -285,7 +379,7 @@ a {
 }
 .about-title,
 .quick-links-title,
-.contact-title {
+.footer .contact-title {
 	font-size: 3rem;
 	font-weight: 700;
 	letter-spacing: -0.5px;
@@ -310,7 +404,7 @@ a {
 }
 
 .quick-links-list,
-.contact-list {
+.footer .contact-list {
 	font-size: 1.6rem;
 	line-height: 1.6;
 	color: #dedede;
@@ -321,7 +415,7 @@ a {
 .quick-links-list-item {
 	cursor: pointer;
 }
-.contact-list-item {
+.footer .contact-list-item {
 	display: flex;
 	gap: 1.2rem;
 	margin-bottom: 0.8rem;

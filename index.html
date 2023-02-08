@@ -33,48 +33,90 @@
 		/>
 
 		<link rel="stylesheet" href="styles/common-style.css" />
-		<link rel="stylesheet" href="styles/style.css" id="index-styles" />
-		<!-- <link
-			rel="stylesheet"
-			href="styles/ai-solutions-style.css"
-			id="ai-solutions-styles"
-		/>
-		<link
-			rel="stylesheet"
-			href="styles/product-style.css"
-			id="products-styles"
-		/> -->
+		<link rel="stylesheet" href="styles/modal.css" />
+		<link rel="stylesheet" href="styles/contact-style.css" />
+		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body class="no-select scroll-container">
 		<header class="header">
-			<div class="logo">
-				<a href="/"><img src="assets/yoco-logo.png" alt="YOCO labs Logo" /></a>
+			<div class="header-container container">
+				<div class="logo">
+					<a href="/"
+						><img src="assets/yoco-logo.png" alt="YOCO labs Logo"
+					/></a>
+				</div>
+				<!-- <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-list-item">
+              <a class="main-nav-link" href="#">AI Solutions</a>
+            </li>
+            <li class="main-nav-list-item">
+              <a class="main-nav-link" href="#">Products</a>
+            </li>
+            <li class="main-nav-list-item">
+              <a class="main-nav-link" href="#">Industries</a>
+              <ul class="main-nav-dropdown">
+                <li>
+                  <a href="#">Retail</a>
+                </li>
+                <li><a href="#">Enterprise</a></li>
+              </ul>
+            </li>
+            <li class="main-nav-list-item">
+              <a class="main-nav-link" href="#">Our Approach</a>
+            </li>
+            <li class="main-nav-list-item">
+              <a class="main-nav-link" href="#">Company</a>
+            </li>
+          </ul>
+        </nav> -->
+				<nav class="main-nav">
+					<div class="dropdownBackground">
+						<span class="arrow"></span>
+					</div>
+					<ul class="main-nav-list">
+						<li class="main-nav-list-item">
+							<a class="main-nav-link" href="#">AI Solutions</a>
+						</li>
+						<li class="main-nav-list-item">
+							<a class="main-nav-link" href="#">Products</a>
+							<ul class="dropdown">
+								<li>
+									<a class="dropdown-nav-link" href="#">E-commerce</a>
+								</li>
+								<li>
+									<a class="dropdown-nav-link" href="#">SaaS</a>
+								</li>
+								<li>
+									<a class="dropdown-nav-link" href="#">Marketplaces</a>
+								</li>
+								<li>
+									<a class="dropdown-nav-link" href="#">Platforms</a>
+								</li>
+							</ul>
+						</li>
+						<li class="main-nav-list-item">
+							<a class="main-nav-link" href="#">Industries</a>
+							<ul class="dropdown">
+								<li>
+									<a class="dropdown-nav-link" href="#">Free</a>
+								</li>
+							</ul>
+						</li>
+						<li class="main-nav-list-item">
+							<a class="main-nav-link" href="#">Our Approach</a>
+						</li>
+						<li class="main-nav-list-item">
+							<a class="main-nav-link" href="#">Company</a>
+						</li>
+					</ul>
+				</nav>
+				<div>
+					<button class="action-btn primary-action-btn" onclick="createModal()">
+						Contact us
+					</button>
+				</div>
 			</div>
-			<nav class="main-nav">
-				<ul class="main-nav-list">
-					<li class="main-nav-list-item">
-						<a class="main-nav-link" href="#">AI Solutions</a>
-					</li>
-					<li class="main-nav-list-item">
-						<a class="main-nav-link" href="#">Products</a>
-					</li>
-					<li class="main-nav-list-item">
-						<a class="main-nav-link" href="#">Industries</a>
-						<ul class="main-nav-dropdown">
-							<li>
-								<a href="#">Retail</a>
-							</li>
-							<li><a href="#">Enterprise</a></li>
-						</ul>
-					</li>
-					<li class="main-nav-list-item">
-						<a class="main-nav-link" href="#">Our Approach</a>
-					</li>
-					<li class="main-nav-list-item">
-						<a class="main-nav-link" href="#">Company</a>
-					</li>
-				</ul>
-			</nav>
 		</header>
 		<main class="main">
 			<!-- HERO SECTION -->
@@ -347,7 +389,7 @@
 							Traditional CCTV and Surveillance Systems
 						</h2>
 						<div class="challenges-card-box grid grid--cols-4">
-							<article class="challenges-card">
+							<!-- <article class="challenges-card">
 								<div class="challenges-title">
 									<img
 										class="challenges-icon"
@@ -361,37 +403,7 @@
 									maintain, as they require specialized equipment and the
 									services of trained professionals.
 								</summary>
-							</article>
-							<article class="challenges-card">
-								<div class="challenges-title">
-									<img
-										class="challenges-icon"
-										src="assets/challenges&solutions/hotspot.svg"
-										alt=""
-									/>
-									<h4>Limited coverage and resolution</h4>
-								</div>
-								<summary class="challenges-summary">
-									The coverage and resolution of traditional CCTV systems can be
-									limited, making it difficult to capture clear and detailed
-									footage of potential criminal activity.
-								</summary>
-							</article>
-							<article class="challenges-card">
-								<div class="challenges-title">
-									<img
-										class="challenges-icon"
-										src="assets/challenges&solutions/tamper.svg"
-										alt=""
-									/>
-									<h4>Vulnerability to tampering and vandalism</h4>
-								</div>
-								<summary class="challenges-summary">
-									Traditional CCTV systems can be vulnerable to tampering and
-									vandalism, as the cameras and other equipment can be easily
-									damaged or destroyed.
-								</summary>
-							</article>
+							</article> -->
 							<article class="challenges-card">
 								<div class="challenges-title">
 									<img
@@ -402,10 +414,61 @@
 									<h4>Dependence on human monitoring</h4>
 								</div>
 								<summary class="challenges-summary">
-									Traditional CCTV systems often rely on human monitoring, which
-									can be prone to errors and inefficiencies. This can lead to
+									Surveillance systems often rely on human monitoring, which can
+									be prone to errors and inefficiencies. This can lead to
 									important footage being missed or overlooked, and can also put
 									a strain on the staff responsible for monitoring the footage.
+								</summary>
+							</article>
+							<article class="challenges-card">
+								<div class="challenges-title">
+									<img
+										class="challenges-icon"
+										src="assets/challenges&solutions/hotspot.svg"
+										alt=""
+									/>
+									<h4>Time-consuming manual analysis</h4>
+								</div>
+								<summary class="challenges-summary">
+									The manual analysis of surveillance footage is limited in its
+									ability to effectively analyze and understand complex
+									behaviors and patterns. This is due to the limitations of
+									human perception and cognition.Hence it can be time-consiming
+									and in effective.
+								</summary>
+							</article>
+							<article class="challenges-card">
+								<div class="challenges-title">
+									<img
+										class="challenges-icon"
+										src="assets/challenges&solutions/tamper.svg"
+										alt=""
+									/>
+									<h4>Inefficient search capabilities</h4>
+								</div>
+								<summary class="challenges-summary">
+									This method requires individuals to manually go through each
+									frame of footage, resulting in a time-consuming process. The
+									inability to effectively search through large amounts of
+									footage makes it difficult to quickly and accurately locate
+									specific events or incidents.
+								</summary>
+							</article>
+							<article class="challenges-card">
+								<div class="challenges-title">
+									<img
+										class="challenges-icon"
+										src="assets/challenges&solutions/tamper.svg"
+										alt=""
+									/>
+									<h4>Challenges in object and individual tracking</h4>
+								</div>
+								<summary class="challenges-summary">
+									The surveillance footage is limited by the difficulty in
+									accurately identifying and tracking individuals and objects
+									automatically and instantly. This method requires individuals
+									to manually review the footage and identify the individuals
+									and objects present in the scene.
 								</summary>
 							</article>
 						</div>
@@ -428,12 +491,12 @@
 								AI video surveillance systems can analyze and interpret footage
 								in real-time, alerting security personnel to potential threats
 								or suspicious activity. They can also learn over time to
-								recognize patterns and improve accuracy. Traditional CCTV
-								systems simply record footage, requiring human monitoring to
-								identify any issues. Additionally, AI video surveillance can
-								integrate with other systems such as access control and license
-								plate recognition, increasing the overall effectiveness of
-								security measures.
+								recognize patterns and improve accuracy. Traditional
+								surveillance systems simply record footage, requiring human
+								monitoring to identify any issues. Additionally, AI video
+								surveillance can integrate with other systems such as access
+								control and license plate recognition, increasing the overall
+								effectiveness of security measures.
 							</summary>
 							<div class="solutions-card-box grid grid--cols-2">
 								<article class="solutions-card">
@@ -517,7 +580,7 @@
 								/>
 								<p>
 									Real Time
-									<span class="application-colored-text">Monitoring</span>
+									<span class="application-colored-text">Alerts</span>
 								</p>
 							</li>
 							<li class="application-list-item">
@@ -536,8 +599,8 @@
 									alt="Tick icon without fill"
 								/>
 								<p>
-									Notifications and
-									<span class="application-colored-text"> Alerts </span>
+									Effortless Video
+									<span class="application-colored-text"> Filtering </span>
 								</p>
 							</li>
 						</ul>
@@ -771,7 +834,9 @@
 						Get a personalized demo of the world’s most-comprehensive platforms
 						and their unique offerings.
 					</p>
-					<button class="contact--2-btn">Contact</button>
+					<button class="action-btn primary-action-btn" onclick="createModal()">
+						Contact us
+					</button>
 				</div>
 			</section>
 		</main>
@@ -996,5 +1061,6 @@
 			<div class="footer-overlay"></div>
 		</footer>
 		<script src="js/script.js"></script>
+		<script src="js/modal.js"></script>
 	</body>
 </html>
