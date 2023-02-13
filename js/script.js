@@ -53,3 +53,19 @@ submenutrigger.forEach((trigger) =>
 submenutrigger.forEach((trigger) =>
 	trigger.addEventListener("mouseleave", deactiveSub)
 );
+
+// INDUSTRIES PAGE SCRIPT
+const enterpriseTab = document.querySelector(".enterprise-tab");
+const retailTab = document.querySelector(".retail-tab");
+
+enterpriseTab.addEventListener("click", onEnterpriseTab);
+retailTab.addEventListener("click", onRetailTab);
+
+function onEnterpriseTab() {
+	retailTab.classList.remove("active-tab");
+	enterpriseTab.classList.add("active-tab");
+}
+function onRetailTab() {
+	enterpriseTab.classList.remove("active-tab");
+	retailTab.classList.add("active-tab");
+}

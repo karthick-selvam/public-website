@@ -372,6 +372,10 @@ High: 30px
 	background-position: center;
 	background-size: contain;
 }
+.application-img {
+	width: 100%;
+	object-fit: cover;
+}
 .application-img-pattern {
 	position: absolute;
 	top: 0;
