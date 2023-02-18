@@ -19,7 +19,7 @@ function activeSub() {
 		// console.log(dropdown);
 
 		var dropdownPos = dropdown.getBoundingClientRect();
-		// console.log(dropdownPos);
+		console.log(dropdownPos);
 		var navPos = nav.getBoundingClientRect();
 		// console.log(navPos);
 

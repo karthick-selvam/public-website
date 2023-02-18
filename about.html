@@ -16,62 +16,6 @@
 
 		<link rel="stylesheet" href="styles/common-style.css" />
 		<link rel="stylesheet" href="styles/about-style.css" />
-		<style>
-			.video-container {
-				position: relative;
-				width: 100%;
-				padding-bottom: 56.25%; /* 16:9 aspect ratio */
-			}
-			.video-container img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-			.play-button {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				width: 80px;
-				height: 80px;
-				background: url(assets/about/play-icon.svg) center no-repeat;
-				cursor: pointer;
-			}
-			.lightbox {
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba(0, 0, 0, 0.8);
-				visibility: hidden;
-				opacity: 0;
-				transition: visibility 0s, opacity 0.5s linear;
-			}
-			.lightbox.open {
-				visibility: visible;
-				opacity: 1;
-			}
-			.close-button {
-				position: absolute;
-				top: 20px;
-				right: 20px;
-				width: 40px;
-				height: 40px;
-				background: url(close-icon.svg) center no-repeat;
-				cursor: pointer;
-			}
-			.lightbox iframe {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				width: 80%;
-				height: 80%;
-				max-width: 720px;
-				max-height: 405px;
-			}
-		</style>
 	</head>
 	<body>
 		<section class="about-hero-section">
@@ -111,31 +55,23 @@
 		</section>
 		<section class="about-offering-section">
 			<div class="about-offering container grid grid--cols-2">
-				<div>
-					<div class="video-container">
-						<!-- Thumbnail Image -->
-						<img
-							src="assets/about/about-video-thumbnail.png"
-							alt="Video Thumbnail"
-						/>
-						<!-- Play Button -->
-						<div class="play-button"></div>
-					</div>
-
-					<!-- Lightbox Container -->
-					<div class="lightbox">
-						<!-- Close Button -->
-						<div class="close-button"></div>
-						<!-- YouTube Iframe -->
-						<iframe
-							src="https://www.youtube.com/embed/[VIDEO_ID]"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-					</div>
+				<div class="about-offering-video-box">
+					<iframe
+						class="about-offering-video"
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/Q2BgPWmYSYs?rel=0&showinfo=0&autohide=1&modestbranding=1"
+						title="YOCO Labs company profile video"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
 				</div>
 				<div class="about-offering-text-box">
+					<p class="about-offering-title">
+						YOCO Labs offers the entire solution for a video Surveillance
+						solution with
+					</p>
 					<div class="about-offering-list-container">
 						<ul class="about-offering-list">
 							<li class="about-offering-list-item">
@@ -174,6 +110,10 @@
 							</li>
 						</ul>
 					</div>
+					<p class="about-offering-text">
+						YOCO Labs touches all aspects of video surveillance from drawing
+						board to deployment.
+					</p>
 				</div>
 			</div>
 		</section>

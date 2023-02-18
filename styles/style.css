@@ -375,6 +375,11 @@ High: 30px
 .application-img {
 	width: 100%;
 	object-fit: cover;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+}
+.application-img:hover {
+	transform: scale(1.7) translateX(100px);
 }
 .application-img-pattern {
 	position: absolute;
